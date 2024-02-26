@@ -20,6 +20,9 @@ h1, h2, h3, h4, h4, h6 {
     // color: var(--txt-color-primary);
 }
 
+main {
+    position: relative;
+}
 
 /*--------------------------------------------------------------
 Abstract
@@ -113,10 +116,28 @@ input[type="checkbox"] {
         position: absolute;
         width: 6px;
         height: 12px;
-        border: solid var(--white);
+        border: solid var(--bg-color-primary);
         border-width: 0 2px 2px 0;
         margin: -3px -1px 0 -1px;
         transform: rotate(45deg);
         z-index: 2;
+    }
+}
+
+.btn {
+    border: 1px solid transparent;
+    padding: 14px 20px;
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    &.primary {
+        background-color: #FF6B4036;
+    }
+    &.secondary {
+        border-color: var(--orange);
     }
 }

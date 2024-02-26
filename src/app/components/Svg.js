@@ -24,9 +24,7 @@ const icons = {
       <path d="M9.24917 14.2909L10.5417 15.5834L15.125 11L10.5417 6.41669L9.24917 7.70919L11.6142 10.0834H2.75V11.9167H11.6142L9.24917 14.2909Z" fill="#FF4242"/>
     </svg>
   )
-
 };
-
 export default function Svg({ icon }) {
 
   const svgIcon = icons[icon] || icons.defaultIcon;

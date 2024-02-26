@@ -7,9 +7,9 @@ import { useState } from 'react';
 
 
 
-export default function UserCard({name}) {
+export default function UserCard({name, initialActive}) {
 
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(initialActive);
 
     const toggleActive = () => {
         setActive(!active);

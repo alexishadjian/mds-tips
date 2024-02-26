@@ -5,6 +5,30 @@ export const datas = {
             id: 1,
             name: "Aaron James",
             photo: "",
+            type: "salle",
+        },
+        {
+            id: 1,
+            name: "Aaron James",
+            photo: "",
+            type: "cuisine",
+        },
+        {
+            id: 1,
+            name: "Aaron James",
+            photo: "",
+            type: "cuisine",
+        },
+        {
+            id: 1,
+            name: "Aaron James",
+            photo: "",
+            type: "salle",
+        },
+        {
+            id: 1,
+            name: "Aaron James",
+            photo: "",
             type: "cuisine",
         },
         {
