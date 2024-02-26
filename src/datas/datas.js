@@ -5,7 +5,7 @@ export const datas = {
             id: 1,
             name: "Aaron James",
             photo: "",
-            type: "cuisine",
+            type: "salle",
         },
         {
             id: 1,
@@ -23,7 +23,7 @@ export const datas = {
             id: 1,
             name: "Aaron James",
             photo: "",
-            type: "cuisine",
+            type: "salle",
         },
         {
             id: 1,
