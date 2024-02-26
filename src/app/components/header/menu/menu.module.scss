@@ -3,7 +3,7 @@
 .navbar {
   top: 0;
   right: 0;
-  z-index: 999; /* Assurez-vous que le z-index est élevé pour que le menu soit au-dessus du reste de la page */
+  z-index: 25;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -39,18 +39,13 @@
 .menuOpen {
   display: flex;
   background-color: var(--bg-color-primary);
-
 }
 
 .menu a {
   text-decoration: none;
   padding: 15px;
+  font-size: 20px;
   text-align: right;
-}
-
-.menuIcon:hover,
-.menuOpen .menuIcon {
-  background-color: #555; /* Fond lorsqu'on survole ou que le menu est ouvert */
 }
 
 .closeIcon {
@@ -58,20 +53,29 @@
   padding: 15px;
   display: flex;
   justify-content: flex-end;
+  margin: 100px 0;
+  svg line {
+    stroke: var(--txt-color-primary);
+  }
 }
-
-
 
 .elementMenu {
   display: flex;
   border-top: 2px solid var(--bg-color-secondary);
   color: var(--txt-color-primary);
-  padding-right: 30px;
-  padding-left: 30px;
-  .admin {
-    path {
-      fill: var(--txt-color-primary)
+  margin-right: 30px;
+  margin-left: 30px;
+  &.active {
+    svg path {
+      fill: var(--orange)
     }
+    a {
+      color: var(--orange);
+      font-weight: 700;
+    }
+  }
+  svg path {
+    fill: var(--txt-color-primary);
   }
 }
 
@@ -81,7 +85,7 @@
   justify-content: space-around;
   padding-right: 30px;
   padding-left: 30px;
-
+  margin-top: auto;
 }
 
 .endservice {

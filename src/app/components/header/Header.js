@@ -7,7 +7,7 @@ export default function TypeSwitchers({title}) {
             <Date />
             <div className="flex space">
                 <div className="col4">
-                    <h1>{title}</h1>
+                    <h1 className="m-0">{title}</h1>
                 </div>
                 <div>
                     <Menu />

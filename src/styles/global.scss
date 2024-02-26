@@ -8,12 +8,11 @@ html {
     transition: 0.3s;
 }
 
-body {
-    height: 100vh;
-    padding-top: 50px;
-}
-
 main {
+    display: flex;
+    flex-flow: column;
+    padding-top: 50px;
+    height: 100vh;
     position: relative;
 }
 

@@ -9,7 +9,7 @@ export default function Service() {
     return (
         <main>
   
-            <Header title="Récapitulatif du service" />
+            <Header title="Ajouter un pourboire" />
 
             <Input name="table" label="Nom de table" placeholder="cerise" />
             <Input name="amount" label="Montant du pourboire" placeholder="3" />
@@ -20,7 +20,7 @@ export default function Service() {
                 <Tip amount={2.00} />
             </div>
 
-            <Button text="Ajouter le pourboire" link="#" />
+            <Button text="Ajouter le pourboire" link="/add" />
   
         </main>
     );

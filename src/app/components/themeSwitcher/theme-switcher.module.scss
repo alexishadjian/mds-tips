@@ -6,7 +6,17 @@
     display: flex;
     gap: 40px;
     position: relative;
-
+    &.active {
+        .active_bg {
+            transform: translateX(65px);
+        }
+        .svg_left svg path {
+            fill: var(--bg-color-primary);
+        }
+        .svg_right svg path {
+            stroke: var(--orange);
+        }
+    }
     .active_bg {
         top: 2px;
         bottom: 2px;
@@ -17,18 +27,21 @@
         aspect-ratio: 1/1;
         background-color: var(--white);
     }
+    .svg_left, .svg_right {
+        display: flex;
+    }
     svg {
         position: relative;
         z-index: 1;
     }
 }
 
-[data-theme="light"] .active_bg {
-    left: 2px;
-    right: unset;
-}
+// [data-theme="light"] .active_bg {
+//     left: 2px;
+//     right: unset;
+// }
 
-[data-theme="dark"] .active_bg {
-    right: 2px;
-    left: unset;
-}
+// [data-theme="dark"] .active_bg {
+//     right: 2px;
+//     left: unset;
+// }
