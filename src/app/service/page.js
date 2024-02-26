@@ -7,7 +7,7 @@ import ThemeSwitcher from '../components/themeSwitcher/ThemeSwitcher';
 
 export default function Service() {
   return (
-    <main>
+    <main className={styles.main}>
 
         <Header title="Récapitulatif du service" />
       
@@ -19,9 +19,10 @@ export default function Service() {
             <UserCards activeType="cuisine" />
         </div>
 
-        <div className="bottom-container wrapper">
-            <h2 className={styles.color_title}>Services</h2>
+        <div className="bottom-container wrapper flex column gap-l center-y">
+            <h2 className={styles.color_title + " m-0"}>Services</h2>
             <ThemeSwitcher />
+            <h2 className="m-0">midi</h2>
             <BottomButton text="Commencer le service !" link="/cuisine" />
         </div>
 
