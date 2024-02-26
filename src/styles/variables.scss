@@ -1,0 +1,31 @@
+:root {
+    --black:#131313;
+    --black1:#131313;
+    --white: #FFFFFF;
+    --gray:#B8B8B8;
+    --dark-gray: #474747;
+    --dark-gray1: #3E3E3E;
+    --light-gray:#E9E9E9;
+    --light-gray1: #F4F4F4; 
+    --light-red: #FF4242;
+    --orange: #FF6B40;
+
+}
+
+[data-theme="light"] {
+    
+    --bg-color-primary:     var(--white);
+    --txt-color-primary:    var(--black);
+    --bg-color-secondary:   var(--light-gray);
+    --bg-input-color:       var(--light-gray1);
+    
+}
+
+[data-theme="dark"] {
+    
+    --bg-color-primary:     var(--black1);
+    --txt-color-primary:    var(--white);
+    --bg-color-secondary:   var(--dark-gray);
+    --bg-input-color:       var(--dark-gray1);
+    
+}

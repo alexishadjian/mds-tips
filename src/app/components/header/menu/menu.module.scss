@@ -1,0 +1,108 @@
+/* Navbar.module.css */
+
+.navbar {
+  top: 0;
+  right: 0;
+  z-index: 999; /* Assurez-vous que le z-index est élevé pour que le menu soit au-dessus du reste de la page */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuIcon {
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--txt-color-primary);
+  margin: 5px 0;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  color: var(--txt-color-primary);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.menuOpen {
+  display: flex;
+  background-color: var(--bg-color-primary);
+
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 15px;
+  text-align: right;
+}
+
+.menuIcon:hover,
+.menuOpen .menuIcon {
+  background-color: #555; /* Fond lorsqu'on survole ou que le menu est ouvert */
+}
+
+.closeIcon {
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.elementMenu {
+  display: flex;
+  border-top: 2px solid var(--bg-color-secondary);
+  color: var(--txt-color-primary);
+  padding-right: 30px;
+  padding-left: 30px;
+  .admin {
+    path {
+      fill: var(--txt-color-primary)
+    }
+  }
+}
+
+.bottomElement {
+  border-top: 2px solid var(--bg-color-secondary);
+  display: flex;
+  justify-content: space-around;
+  padding-right: 30px;
+  padding-left: 30px;
+
+}
+
+.endservice {
+  padding: 15px; /* Ajout d'un espace autour du texte pour améliorer l'apparence */
+  text-align: right; /* Alignement du texte à droite */
+  color: var(--light-red);
+  
+}
+
+.Svg {
+  margin-top: 15px;
+}
+
+.link {
+  color: var(--txt-color-primary)
+}
+
+.admin {
+  .Svg {
+    path {
+      fill: var(--txt-color-primary)
+    }
+  }
+}

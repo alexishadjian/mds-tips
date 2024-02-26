@@ -1,0 +1,14 @@
+.input {
+    margin-bottom: 12px;
+    span {
+        color: var(--orange);
+        font-size: 17px;
+        font-weight: 700;
+    }
+    input {
+        background-color: var(--bg-input-color);
+        padding: 16px 28px;
+        border-radius: 8px;
+        border: none;
+    }
+}

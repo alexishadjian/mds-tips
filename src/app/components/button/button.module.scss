@@ -1,0 +1,19 @@
+.button {
+    border: 1px solid transparent;
+    padding: 14px 20px;
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: #FF6B4036;
+    span, svg {
+        vertical-align: middle;
+    }
+    svg {
+        margin-left: 16px;
+    }
+}
