@@ -1,5 +1,7 @@
 import styles from './page.module.scss';
-import TypeSwitcher from './components/typeSwitcher/TypeSwitcher'
+import TypeSwitcher from './components/typeSwitcher/TypeSwitcher';
+import UserCard from './components/userCard/UserCard';
+import { datas } from "@/datas/datas";
 
 
 
@@ -15,10 +17,15 @@ export default function Home() {
           menu
         </div>
       </div>
-      <div className={styles.type_switchers + " flex center gap-l"}>
-        <TypeSwitcher text="salle" active/>
-        <TypeSwitcher text="cuisine"/>
-        <TypeSwitcher text="service"/>
+      <div className={styles.type_switchers + " flex center gap-m"}>
+          {datas.types?.map((type, i) => (
+              <TypeSwitcher text={type} key={i} active={(i===0) ? true : false }/>
+          ))}
+      </div>
+      <div className={styles.user_cards + " flex column gap-xs"}>
+          {datas.users?.map((user, i) => (
+              <UserCard key={i} name={user.name} />
+          ))}
       </div>
     </main>
   );
