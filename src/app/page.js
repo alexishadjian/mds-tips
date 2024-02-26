@@ -13,7 +13,7 @@ export default function Home() {
           <h1>Qui travaille aujourd’hui ?</h1>
         </div>
         <div>
-          menu
+          < Menu/>
         </div>
       </div>
       <div className={styles.type_switchers + " flex center gap-m"}>
