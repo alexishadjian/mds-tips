@@ -1,9 +1,9 @@
 import Header from '../components/header/Header';
 import TypeSwitchers from '../components/typeSwitchers/TypeSwitchers';
 import UserCards from '../components/userCards/UserCards';
-import BottomButton from '../components/bottomButton/BottomButton';
+import BottomButton from '../components/button/Button';
 
-export default function kitchen() {
+export default function Kitchen() {
   return (
     <main>
 
@@ -13,7 +13,9 @@ export default function kitchen() {
 
       <UserCards activeType="cuisine" />
 
-      <BottomButton text="Suivant" link="/cuisine" />
+      <div className="bottom-container wrapper">
+        <BottomButton text="Suivant" link="/service" />
+      </div>
 
     </main>
   );

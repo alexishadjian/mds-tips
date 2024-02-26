@@ -124,20 +124,12 @@ input[type="checkbox"] {
     }
 }
 
-.btn {
-    border: 1px solid transparent;
-    padding: 14px 20px;
-    color: var(--orange);
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 25px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    &.primary {
-        background-color: #FF6B4036;
-    }
-    &.secondary {
-        border-color: var(--orange);
-    }
+.bottom-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 33px 0;
+    z-index: 10;
+    background-color: var(--bg-color-primary);
 }

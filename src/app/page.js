@@ -2,7 +2,7 @@ import styles from './page.module.scss';
 import Header from './components/header/Header';
 import TypeSwitchers from './components/typeSwitchers/TypeSwitchers';
 import UserCards from './components/userCards/UserCards';
-import BottomButton from './components/bottomButton/BottomButton';
+import Button from './components/button/Button';
 
 export default function Home() {
   return (
@@ -14,7 +14,9 @@ export default function Home() {
 
       <UserCards activeType="salle" />
 
-      <BottomButton text="Suivant" link="/kitchen" />
+      <div className="bottom-container wrapper">
+        <Button text="Suivant" link="/kitchen" />
+      </div>
 
     </main>
   );
