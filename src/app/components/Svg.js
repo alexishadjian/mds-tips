@@ -25,7 +25,6 @@ const icons = {
     </svg>
   )
 };
-
 export default function Svg({ icon }) {
 
   const svgIcon = icons[icon] || icons.defaultIcon;

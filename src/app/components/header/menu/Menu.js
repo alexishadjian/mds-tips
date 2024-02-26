@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from 'react';
-import styles from './menu.module.scss';            
+import styles from './menu.module.scss';     
+import Svg from "@/app/components/Svg";
+
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,9 +20,24 @@ const Menu = () => {
       </div>
       <div className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}>
         <div className={styles.closeIcon} onClick={toggleMenu}>X</div>
-        <a href="#">Service</a>
-        <a href="#">Administrateur</a>
-        <a className={styles.endservice} href="#">Terminer le service</a>
+        
+        <div className={styles.elementMenu}>
+          <div className={styles.Svg}><Svg icon="exit" /></div>
+          <a className={styles.link} href="#">Service</a>
+        </div>
+        
+        
+        <div className={styles.elementMenu}>
+          <div className={styles.Svg}><Svg icon="exit" /></div>
+          <a className={styles.link} href="#">Administrateur</a>
+          
+        </div>
+        
+        
+        <div className={styles.bottomElement}>
+          <a className={styles.endservice} href="#">Fermer le service</a>
+          <div className={styles.Svg}><Svg icon="exit" /></div>
+        </div>
       </div>
     </div>
   );
