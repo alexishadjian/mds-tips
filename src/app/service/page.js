@@ -16,7 +16,7 @@ export default function Service() {
 
             <h2 className={styles.color_title}>Employés sélectionnés</h2>
 
-            <UserCards activeType="cuisine" />
+            <UserCards activeType="cuisine" selected />
         </div>
 
         <div className="bottom-container wrapper flex column gap-l center-y">

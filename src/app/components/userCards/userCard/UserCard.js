@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 
-export default function UserCard({name, initialActive}) {
+export default function UserCard({name, type, selected, initialActive}) {
 
     const [active, setActive] = useState(initialActive);
 
@@ -23,11 +23,15 @@ export default function UserCard({name, initialActive}) {
                 </div>      
                 <div className={styles.name}><h3>{name}</h3></div>
             </div>
-            <div className="input-group checkbox">
-                <label className="flex">
-                    <input type="checkbox" value={active} checked={active} onChange={toggleActive} />
-                </label>
-            </div>
+            {!selected ?            
+                <div className="checkbox">
+                    <label className="flex">
+                        <input type="checkbox" value={active} checked={active} onChange={toggleActive} />
+                    </label>
+                </div>
+            :
+                <span className={styles.type}>{type}</span>
+            }
         </div>
     );
 }
