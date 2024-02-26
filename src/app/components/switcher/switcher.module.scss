@@ -1,0 +1,52 @@
+.switcher_container {
+    background-color: #FFE1D9;
+    border: 1px solid #FF6B4045;
+    padding: 14px;
+    border-radius: 30px;
+    display: flex;
+    gap: 40px;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    &.active {
+        .active_bg {
+            transform: translateX(65px);
+        }
+        .svg_left svg path {
+            fill: var(--bg-color-primary);
+        }
+        .svg_right svg path {
+            stroke: var(--orange);
+        }
+    }
+    .active_bg {
+        top: 2px;
+        bottom: 2px;
+        left: 2px;
+        position: absolute;
+        transition: 0.3s;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        background-color: var(--white);
+    }
+    .svg_left, .svg_right {
+        display: flex;
+    }
+    .svg_left svg path {
+        fill: var(--orange);
+    }
+    svg {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+// [data-theme="light"] .active_bg {
+//     left: 2px;
+//     right: unset;
+// }
+
+// [data-theme="dark"] .active_bg {
+//     right: 2px;
+//     left: unset;
+// }

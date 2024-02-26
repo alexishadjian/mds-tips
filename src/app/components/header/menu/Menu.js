@@ -19,9 +19,9 @@ const Menu = () => {
         <div className={styles.bar}></div>
       </div>
       <div className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}>
-        <div className={styles.closeIcon} onClick={toggleMenu}>X</div>
+        <div className={styles.closeIcon} onClick={toggleMenu}><Svg icon="cross" /></div>
         
-        <div className={styles.elementMenu}>
+        <div className={`${styles.elementMenu} ${styles.active}`}>
           <div className={styles.Svg}><Svg icon="bell" /></div>
           <a className={styles.link} href="#">Service</a>
         </div>
