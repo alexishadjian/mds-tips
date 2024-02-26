@@ -1,8 +1,8 @@
 import styles from './page.module.scss';
 import { datas } from "@/datas/datas";
 import Menu from './components/menu/Menu';
-import TypeSwitcher from './components/typeSwitcher/TypeSwitcher';
-import UserCard from './components/userCard/UserCard';
+import TypeSwitchers from './components/typeSwitchers/TypeSwitchers';
+import UserCards from './components/userCards/UserCards';
 import BottomButton from './components/bottomButton/BottomButton';
 
 export default function Home() {
@@ -14,20 +14,16 @@ export default function Home() {
           <h1>Qui travaille aujourd’hui ?</h1>
         </div>
         <div>
-          < Menu/>
+          <Menu />
         </div>
       </div>
-      <div className={styles.type_switchers + " flex center gap-m"}>
-          {datas.types?.map((type, i) => (
-              <TypeSwitcher text={type} key={i} active={(i===0) ? true : false }/>
-          ))}
-      </div>
-      <div className={styles.user_cards + " flex column gap-xs"}>
-          {datas.users?.map((user, i) => (
-              <UserCard key={i} name={user.name} />
-          ))}
-      </div>
-      <BottomButton text="Suivant" />
+      
+      <TypeSwitchers activeIndex={0} />
+
+      <UserCards />
+
+      <BottomButton text="Suivant" link="/kitchen" />
+
     </main>
   );
 }
