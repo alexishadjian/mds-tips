@@ -22,13 +22,13 @@ const Menu = () => {
         <div className={styles.closeIcon} onClick={toggleMenu}>X</div>
         
         <div className={styles.elementMenu}>
-          <div className={styles.Svg}><Svg icon="exit" /></div>
+          <div className={styles.Svg}><Svg icon="bell" /></div>
           <a className={styles.link} href="#">Service</a>
         </div>
         
         
         <div className={styles.elementMenu}>
-          <div className={styles.Svg}><Svg icon="exit" /></div>
+          <div className={styles.Svg + " admin"}><Svg icon="admin" /></div>
           <a className={styles.link} href="#">Administrateur</a>
           
         </div>
