@@ -1,0 +1,59 @@
+@import 'reset';
+@import 'variables';
+
+body {
+    height: 100vh;
+}
+
+
+/*--------------------------------------------------------------
+Abstract
+--------------------------------------------------------------*/
+
+.flex {
+    display: flex;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
+Columns
+--------------------------------------------------------------*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1 {
+    flex: 0 1 calc(100% / 6);
+    max-width: calc(100% / 6);
+}
+
+.col2 {
+    flex: 0 1 calc(100% / 6 * 2);
+    max-width: calc(100% / 6 * 2);
+}
+
+.col3 {
+    flex: 0 1 calc(100% / 6 * 3);
+    max-width: calc(100% / 6 * 3);
+}
+
+.col4 {
+    flex: 0 1 calc(100% / 6 * 4);
+    max-width: calc(100% / 6 * 4);
+}
+
+.col5 {
+    flex: 0 1 calc(100% / 6 * 5);
+    max-width: calc(100% / 6 * 5);
+}
+
+.col6 {
+    flex: 0 1 100%;
+    max-width: 100%;
+}
