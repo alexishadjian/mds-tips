@@ -1,6 +1,6 @@
-// import styles from './tip.module.scss';
 import Header from '../components/header/Header';
 import Input from '../components/input/Input';
+import Switcher from '../components/switcher/Switcher';
 
 
 export default function Service() {
@@ -12,8 +12,7 @@ export default function Service() {
             <Input name="lastname" label="Nome" placeholder="Doe" />
             <Input name="firstname" label="Prénom" placeholder="John" />
         
-            //Switcher
-            
+            <Switcher icon1="bell" icon2="stove" /> 
   
         </main>
     );

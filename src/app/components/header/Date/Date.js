@@ -1,5 +1,8 @@
 "use client";
 
+import styles from './date.module.scss';
+
+
 const Dateajd = () => {      
 
         const today = new Date();
@@ -9,7 +12,7 @@ const Dateajd = () => {
             month: "long",
         });
         return (
-            <p>{dateString}</p>
+            <p className={styles.date}>{dateString}</p>
         );
   };
   

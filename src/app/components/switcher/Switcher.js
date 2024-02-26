@@ -3,9 +3,9 @@
 import Svg from "@/app/components/Svg";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import styles from './theme-switcher.module.scss'
+import styles from './switcher.module.scss'
 
-export default function ThemeSwitcher({icon1, icon2, isTheme}) {
+export default function Switcher({icon1, icon2, isTheme}) {
 
     const [mounted, setMounted] = useState(false);
     const [active, setActive] = useState(false);
@@ -30,8 +30,7 @@ export default function ThemeSwitcher({icon1, icon2, isTheme}) {
         }
     }
 
-    console.log(active)
-
+    
     return (
         <button
             className={`${styles.switcher_container} ${active ? styles.active : ''}`}
@@ -39,10 +38,10 @@ export default function ThemeSwitcher({icon1, icon2, isTheme}) {
         >
             <div className={styles.active_bg}></div>
             <div className={styles.svg_left}>
-                <Svg icon="sun" />
+                <Svg icon={icon1} />
             </div>
             <div className={styles.svg_right}>
-                <Svg icon="moon" />
+                <Svg icon={icon2} />
             </div>
         </button>
 

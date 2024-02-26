@@ -6,6 +6,8 @@
     display: flex;
     gap: 40px;
     position: relative;
+    width: fit-content;
+    margin: 0 auto;
     &.active {
         .active_bg {
             transform: translateX(65px);
@@ -29,6 +31,9 @@
     }
     .svg_left, .svg_right {
         display: flex;
+    }
+    .svg_left svg path {
+        fill: var(--orange);
     }
     svg {
         position: relative;

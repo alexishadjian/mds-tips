@@ -3,7 +3,7 @@ import Header from '../components/header/Header';
 import TypeSwitchers from '../components/typeSwitchers/TypeSwitchers';
 import UserCards from '../components/userCards/UserCards';
 import Button from '../components/button/Button';
-import ThemeSwitcher from '../components/themeSwitcher/ThemeSwitcher';
+import Switcher from '../components/switcher/Switcher';
 
 export default function Service() {
   return (
@@ -22,9 +22,9 @@ export default function Service() {
           <div className="bottom-container">
             <div className="wrapper flex column gap-l center-y">
               <h2 className={styles.color_title + " m-0"}>Services</h2>
-              <ThemeSwitcher isTheme />
+              <Switcher icon1="sun" icon2="moon" isTheme />
               <h2 className="m-0">midi</h2>
-              <Button text="Commencer le service !" link="/tip" />
+              <Button text="Commencer le service !" link="/tip" picto={false} />
             </div>
           </div>
 
