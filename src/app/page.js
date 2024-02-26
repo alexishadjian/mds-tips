@@ -1,9 +1,8 @@
 import styles from './page.module.scss';
+import Menu from './components/menu/Menu';
 import TypeSwitcher from './components/typeSwitcher/TypeSwitcher';
 import UserCard from './components/userCard/UserCard';
 import { datas } from "@/datas/datas";
-
-
 
 export default function Home() {
   return (
@@ -27,6 +26,7 @@ export default function Home() {
               <UserCard key={i} name={user.name} />
           ))}
       </div>
+
     </main>
   );
 }
