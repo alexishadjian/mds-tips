@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <Theme>
-          <body>{children}</body>
+          <body className='wrapper'>{children}</body>
         </Theme>
     </html>
   );

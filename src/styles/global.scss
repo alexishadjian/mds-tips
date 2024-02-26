@@ -4,11 +4,16 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-color-primary);
-    color: var(--text-color-primary);
+    color: var(--txt-color-primary);
 }
 
 body {
     height: 100vh;
+    padding-top: 50px;
+}
+
+h1, h2, h3, h4, h4, h6 {
+    // color: var(--txt-color-primary);
 }
 
 
@@ -16,14 +21,24 @@ body {
 Abstract
 --------------------------------------------------------------*/
 
-.flex {
+.flex { 
     display: flex;
+
+    &.space     { justify-content: space-between }
+    &.center    { justify-content: center; align-items: center }
+    &.center-x  { justify-content: center }
+    &.center-y  { align-items: center }
+    &.column    { flex-direction: column }
+    &.wrap      { flex-wrap: wrap }
+
 }
 
-.flex-space {
-    display: flex;
-    justify-content: space-between;
-}
+.gap-xxs { gap: 4px }
+.gap-xs  { gap: 8px }
+.gap-s   { gap: 16px }
+.gap-m   { gap: 24px }
+.gap-l   { gap: 40px }
+.gap-xl  { gap: 54px }
 
 /*--------------------------------------------------------------
 Columns
@@ -62,4 +77,42 @@ Columns
 .col6 {
     flex: 0 1 100%;
     max-width: 100%;
+}
+
+.wrapper {  
+    max-width: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px;
+    height: 20px;
+    width: 20px;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    &:checked {
+        background-color: var(--orange);
+        border-color: var(--orange);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 12px;
+        border: solid var(--white);
+        border-width: 0 2px 2px 0;
+        margin: -3px -1px 0 -1px;
+        transform: rotate(45deg);
+        z-index: 2;
+    }
 }
