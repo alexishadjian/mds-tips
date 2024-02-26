@@ -1,8 +1,8 @@
-import styles from './style.module.scss';
+import styles from './service.module.scss';
 import Header from '../components/header/Header';
 import TypeSwitchers from '../components/typeSwitchers/TypeSwitchers';
 import UserCards from '../components/userCards/UserCards';
-import BottomButton from '../components/button/Button';
+import Button from '../components/button/Button';
 import ThemeSwitcher from '../components/themeSwitcher/ThemeSwitcher';
 
 export default function Service() {
@@ -23,7 +23,7 @@ export default function Service() {
             <h2 className={styles.color_title + " m-0"}>Services</h2>
             <ThemeSwitcher />
             <h2 className="m-0">midi</h2>
-            <BottomButton text="Commencer le service !" link="/cuisine" />
+            <Button text="Commencer le service !" link="/tip" />
         </div>
 
     </main>
