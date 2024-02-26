@@ -1,4 +1,6 @@
 import styles from './page.module.scss';
+import TypeSwitcher from './components/typeSwitcher/TypeSwitcher'
+
 
 
 export default function Home() {
@@ -12,6 +14,11 @@ export default function Home() {
         <div>
           menu
         </div>
+      </div>
+      <div className={styles.type_switchers + " flex center gap-l"}>
+        <TypeSwitcher text="salle" active/>
+        <TypeSwitcher text="cuisine"/>
+        <TypeSwitcher text="service"/>
       </div>
     </main>
   );

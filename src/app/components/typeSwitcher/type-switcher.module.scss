@@ -1,0 +1,15 @@
+.type_switcher {
+    padding: 6px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    &.active {
+        background-color: var(--bg-color-secondary);
+        span {
+            opacity: 1;
+        }
+    }
+    span {
+        opacity: 0.4;
+        font-weight: 700;
+    }
+}
